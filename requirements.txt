@@ -1,0 +1,12 @@
+# PS5 Screen Capture dependencies (Python 3.8)
+# Remote Play protocol implementation (PS4/PS5), with GUI extras:
+#   - PySide6  (Qt GUI)
+#   - av       (PyAV: video decode + recording, bundles ffmpeg + libx264)
+pyremoteplay[gui]==0.7.6
+
+# IMPORTANT: pyremoteplay 0.7.6 imports `ExecutorEventEmitter` from the top of
+# pyee, which newer pyee (>=9) removed. Pin the last version that still exports it.
+pyee==8.2.2
+
+# Frame -> QImage conversion and recording. numpy >=1.25 drops Python 3.8.
+numpy<1.25

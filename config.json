@@ -1,0 +1,9 @@
+{
+  "last_ip": "192.168.20.26",
+  "resolution": "720p",
+  "fps": 30,
+  "codec": "h264",
+  "play_audio": true,
+  "record_audio": true,
+  "auto_reconnect": true
+}
